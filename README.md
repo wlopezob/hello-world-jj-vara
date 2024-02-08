@@ -1,0 +1,1 @@
+https://wiki.gear-tech.io/docs/getting-started-in-5-minutes/

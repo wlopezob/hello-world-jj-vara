@@ -38,7 +38,7 @@
 	"forwardPorts": [8080],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "rustup target add wasm32-unknown-unknown && cargo install --locked trunk && cargo install --locked wasm-bindgen-cli"
+	"postCreateCommand": "rustup toolchain add nightly-2023-09-18 && rustup target add wasm32-unknown-unknown --toolchain nightly-2023-09-18 && cargo install --locked --git https://github.com/gear-tech/gear.git wasm-proc "
 
 	// Configure tool-specific properties.
 	// "customizations": {},
